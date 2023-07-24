@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>안녕하세요</title>
+</head>
+<body>
+    <!-- 사용자 데이터 입력 태그 -->
+    <!-- gender태그는 같은 값을 줘야 그룹핑이 됨 -->
+    <!-- value 값을 줘야 데이터로 값이 넘어감 -->
+
+<form action="target.html">
+    이름: <input type="text" name="username"><br>
+    비번: <input type="text" name="passwd"><br>
+
+    <!-- 디폴트로 체크값 만들기는 checked 속성(라디오와 체크박스에 주로 씀)-->
+    <input type="radio" name="gender" value="남">남
+    <input type="radio" name="gender" value="여" checked>여<br>
+
+    <input type="checkbox" name="fruit" value="사과" checked>사과
+    <input type="checkbox" name="fruit" value="바나나" checked>바나나
+    <input type="checkbox" name="fruit" value="메론">메론<br>
+
+    <input type="color" name="m_color">색상표<br>
+    <input type="date" name="m_date">달력<br>
+
+    <!-- 입력 시 @문자 필수 -->
+    <input type="email" name="m_email">이메일<br>
+
+    <!-- 파일선택 라벨 없이도 자동으로 '파일선택'글자 출력 -->
+    <input type="file" name="m_file"><br>
+
+    <!-- 파일 하나만 선택가능 -->
+    <input type="file" name="m_file" accept="image/*"><br>
+    <!-- 파일 한번에 여러개 선택 가능 -->
+    <input type="file" name="m_file" muptiple><br>
+
+    <!-- 사용자에게 태그를 보여주지 않고 임의의 값을 서버에 전달할 때 -->
+    <input type="hidden" name="address" value="seoul"><br>
+
+    <!-- 참고:기본적으로 음수도 됨, 속성값으로 최대최솟값도 지정가능 -->
+    참가자수: <input type="number" name="count"><br>
+    참가자수: <input type="number" name="count" min="0" max="5"><br>
+    <!-- 5씩 증감하도록 만드는 속성 step -->
+    스텝지정: <input type="number" name="count" step="5"><br>
+
+    <input type="range" name="m_range" min="1" max="10"><br>
+
+    <!-- text와 비슷한 속성값. 검색하고 한꺼번에 다 지울 수 있음 -->
+    검색:<input type="search" name="m_search"><br>
+
+    <!-- 드롭다운리스트에서 선택할 수 있도록 하는 속성 select -->
+    선택:<select id="cars">
+        <option value="volvo">volvo</option>
+        <option value="saab">saab</option>
+        <option value="fiat">fiat</option>
+        <option value="audi">audi</option>
+    </select><br>
+
+    <!-- 다른 input태그는 값을 value속성에 설정하지만,
+    textarea는 value 속성이 아닌 태그의 몸체에 지정한다. -->
+    <textarea name="message" cols="30" rows="10">
+inkeon is drinking a beer.
+시원한 맥주
+    </textarea><br>
+
+    <input type="submit" value="로그인2">
+    <input type="reset" value="초기화">
+</form>
+
+</body>
+</html>

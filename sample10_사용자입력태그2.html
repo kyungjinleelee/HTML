@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>안녕하세요</title>
+</head>
+<body>
+    <!-- 사용자 데이터 입력 태그 -->
+    <!-- (속성명)required placeholder는 칸 안을 채워야만 제출되도록 하는 것 -->
+    <!-- value는 기본값을 주고 시작하는 것 -->
+    <!-- autofocus는 자동으로 커서 깜빡이도록 하는 것 -->
+    <!-- name이라는 속성 안주면 데이터가 안넘어감 (가장 중요)-->
+    <h2>GET 방식</h2>
+    <form action="target.html" method="get">
+        나이:<input type="text" name="age" id="age" value="10" readonly><br>
+        <label>이름:</label><input type="text" name="username" autofocus id="name"><br>
+        <input type="text" name="address" required placeholder="주소입력" id="address"><br>
+
+        <input type="submit" value="로그인2">
+    </form>
+    
+    <hr>
+    <h2>POST 방식</h2>
+    <form action="target.html" method="post">
+        나이:<input type="text" name="age" id="age" value="10" readonly><br>
+        <label>이름:</label><input type="text" name="username" autofocus id="name"><br>
+        <input type="text" name="address" required placeholder="주소입력" id="address"><br>
+
+        <input type="submit" value="로그인2">
+</body>
+</html>
